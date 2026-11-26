@@ -1,0 +1,56 @@
+{
+  "model": "Decision Tree",
+  "dilatih_pada": "2026-11-26T10:29:37",
+  "versi_sklearn": "1.9.1",
+  "fitur_urutan": [
+    "utilisasi_kredit",
+    "usia",
+    "telat_30_59",
+    "rasio_utang",
+    "pendapatan_bulanan",
+    "jumlah_kredit_aktif",
+    "telat_90_plus",
+    "jumlah_kpr",
+    "telat_60_89",
+    "jumlah_tanggungan"
+  ],
+  "ambang_keputusan": 0.20666666666666667,
+  "parameter_terbaik": {
+    "model__max_depth": 10,
+    "model__min_samples_leaf": 100
+  },
+  "jumlah_data": 150000,
+  "proporsi_gagal_bayar": 0.06684,
+  "metrik_pemilihan": "pr_auc",
+  "bobot_metrik": 0.7,
+  "cv": {
+    "cv_f1": 0.3655445741559542,
+    "cv_pr_auc": 0.3276157524882414,
+    "cv_recall": 0.30607080429766703,
+    "cv_precision": 0.4540341649902839
+  },
+  "test": {
+    "pr_auc": 0.32879649641790887,
+    "roc_auc": 0.8345374730703157,
+    "ambang_0.5": {
+      "threshold": 0.5,
+      "precision": 0.4586894586894587,
+      "recall": 0.32119700748129676,
+      "f1": 0.37782340862423,
+      "TP": 644,
+      "FP": 760,
+      "FN": 1361,
+      "TN": 27235
+    },
+    "ambang_terpilih": {
+      "threshold": 0.20666666666666667,
+      "precision": 0.22218543046357617,
+      "recall": 0.6693266832917706,
+      "f1": 0.33362336855189556,
+      "TP": 1342,
+      "FP": 4698,
+      "FN": 663,
+      "TN": 23297
+    }
+  }
+}

@@ -1,0 +1,5 @@
+model,pencarian,kombinasi_diuji,cv_f1,cv_f1_std,cv_pr_auc,cv_recall,cv_precision,interpretability_1_5,waktu_detik,parameter_terbaik,skor_pemilihan
+Logistic Regression,GridSearchCV,4,0.33796994517794193,0.00552487714181729,0.35887346148266486,0.7336970657468479,0.21955627219641244,4,10.9,"{""model__C"": 10}",0.4912114230378654
+Decision Tree,GridSearchCV,12,0.3655445741559542,0.006596156818645495,0.3276157524882414,0.30607080429766703,0.4540341649902839,5,12.7,"{""model__max_depth"": 10, ""model__min_samples_leaf"": 100}",0.529331026741769
+Random Forest,RandomizedSearchCV,8,0.4209982553323733,0.0069158416237967224,0.38292875206218774,0.4035643756651984,0.4402914087756754,3,419.9,"{""model__n_estimators"": 300, ""model__min_samples_leaf"": 20, ""model__max_depth"": 15}",0.44805012644353137
+Gradient Boosting,RandomizedSearchCV,8,0.3340734315905589,0.0054020167039245965,0.3776575534528284,0.243236457143745,0.5340277878281416,2,842.9,"{""model__n_estimators"": 200, ""model__max_depth"": 4, ""model__learning_rate"": 0.1}",0.3843602874169799
